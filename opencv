@@ -1,1 +1,9 @@
-
+opencv提取角点
+  -> cvFindChessboardCorners
+  -> icvBinarizationHistogramBased 基于灰度直方图的自适应阈值图像二值化
+  -> dilate膨胀(放大白色部分缩小黑色部分) -> rectangle检测四边形(轮廓凸包->多边形检测->判断顶点个数->根据面积形状进行阈值筛选)
+  -> processQuads对四边形进行处理(根据四边形位置关系确定角点)
+  -> 亚像素精细化
+  
+  
+  倾斜情况四边形提取不准确
