@@ -8,3 +8,26 @@ BST 二叉搜索树
 搜索kdtree
 1 选择叶子节点 回溯根节点
 2 在该过程中
+
+CS106L 
+类似BST，每层按照不同维度进行存储
+
+
+
+The Geometric Intuition Behind kd-Trees->
+  以BST为引，引入hyperplane超平面
+  
+  
+  
+Nearest-Neighbor Lookup in kd-Trees ->
+  hypersphere超球面，用于确定最近点查找
+  考虑kdtree某一节点和任意搜索点，计算超平面idx下的坐标差绝对值和超球面半径差 -> 判断搜索超球面是否与分割超平面相交
+  recap:
+    最近点必在超球面内
+    如果超球面在某个超平面一侧，超平面另一侧必不可能有最近点
+    判断超球面是否与超平面相交的方法：计算分割超平面节点，在该超平面维度下，与圆心该维度下的差的绝对值是否小于r
+    
+    
+    
+k-Nearest Neighbor Searches and Bounded Priority Queues ->
+  
